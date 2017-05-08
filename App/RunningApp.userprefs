@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{01891BCE-806A-41AA-ACE4-AD0C8EB2C3E6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RunningApp/Models/RunnerData.cs">
+    <Files>
+      <File FileName="RunningApp/Pages/MyPanelPage.xaml.cs" Line="27" Column="1" />
+      <File FileName="RunningApp/Pages/MyPanelPage.xaml" Line="38" Column="12" />
+      <File FileName="RunningApp/Pages/MainPage.xaml" Line="4" Column="4" />
+      <File FileName="RunningApp/Pages/MainPage.xaml.cs" Line="13" Column="20" />
+      <File FileName="RunningApp/Utilities/RunnerStatistic.cs" Line="22" Column="57" />
+      <File FileName="RunningApp/Utilities/IoCContainer.cs" Line="14" Column="53" />
+      <File FileName="RunningApp/Utilities/DBUser.cs" Line="31" Column="5" />
+      <File FileName="RunningApp/packages.config" Line="1" Column="1" />
+      <File FileName="RunningApp/Pages/RegisterPage.xaml" Line="52" Column="45" />
+      <File FileName="RunningApp/Pages/RegisterPage.xaml.cs" Line="17" Column="39" />
+      <File FileName="RunningApp/Pages/MyHistoryPage.xaml.cs" Line="25" Column="23" />
+      <File FileName="RunningApp/Interfaces/IDBUser.cs" Line="9" Column="16" />
+      <File FileName="RunningApp/Models/RunnerData.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.RunningApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.98E9CF99-B3AA-4414-A953-D7EFAA440077" />
+  <MultiItemStartupConfigurations />
+</Properties>

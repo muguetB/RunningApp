@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="RunningApp.MyHistoryPage">
+	<StackLayout>   
+ 		<Label x:Name="kilometer_label"
+			   Text="dane"
+			   Margin="60, 100, 0, 0"/>
+
+		<Label x:Name="heartRate_label"
+			   Text="test"
+			   Margin="60, 30, 0, 0"/>
+		
+		<Label x:Name="calories_label"
+			   Text="calories"
+			   Margin="60, 30, 0, 0"/>
+    </StackLayout>   
+</ContentPage>
