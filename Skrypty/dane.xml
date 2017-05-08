@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<values>
+    <value>
+        <date>10-04-2017</date>
+        <calories>350</calories>
+        <km>7.5</km>
+        <heartRate>103</heartRate>
+    </value>
+    <value>
+        <date>11-04-2017</date>
+        <calories>546</calories>
+        <km>9.9</km>
+        <heartRate>112</heartRate>
+    </value>
+    <value>
+        <date>12-04-2017</date>
+        <calories>478</calories>
+        <km>8.6</km>
+        <heartRate>106</heartRate>
+    </value>
+</values>
