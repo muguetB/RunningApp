@@ -22,7 +22,7 @@ namespace RunningApp
 
 			if (userref.userref.ToString() != "0")
 			{
-				await Navigation.PushModalAsync(new MyPanelPage());
+				await Navigation.PushAsync(new MyPanelPage());
 			}
 
 			else

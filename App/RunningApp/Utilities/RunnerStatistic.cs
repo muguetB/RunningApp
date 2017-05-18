@@ -19,7 +19,7 @@ namespace RunningApp
 		public async Task<String> getStatisticXML(String dataXML)
 		{
 			var httpContent = new StringContent(dataXML, Encoding.UTF8, "application/xml");
-			var requestUri = "http://localhost/runningApp/readXML.php";
+			var requestUri = "http://malinkowyserwer.ddns.net/Skrypty/readXML.php";
 			var response = await httpClient.PostAsync(requestUri, httpContent);
 
 			string resultContent = await response.Content.ReadAsStringAsync();

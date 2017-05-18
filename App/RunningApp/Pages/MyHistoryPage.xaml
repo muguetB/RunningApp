@@ -2,18 +2,50 @@
 <ContentPage 
 	xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-	x:Class="RunningApp.MyHistoryPage">
-	<StackLayout>   
- 		<Label x:Name="kilometer_label"
-			   Text="dane"
-			   Margin="60, 100, 0, 0"/>
+	x:Class="RunningApp.MyHistoryPage"
+	BackgroundColor="#99ccff">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style TargetType="Label">
+				<Setter Property="HorizontalOptions" Value="Center"/>
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<StackLayout Margin="0,20,0,0">   
+			<Grid BackgroundColor="Navy">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="40"/>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+			<Label Text="Kilometry:" FontAttributes="Bold" Margin="0,5,0,0" TextColor="White"/>
+			<Label Text="Puls:" Grid.Column="1" FontAttributes="Bold" Margin="0,5,0,0" TextColor="White"/>
+			<Label Text="Kalorie:" Grid.Column="2" FontAttributes="Bold" Margin="0,5,0,0" TextColor="White"/>	
+	 		<Label x:Name="kilometer_label" Text="0" Grid.Row="1" Margin="0,0,0,5" TextColor="White"/>		
+			<Label x:Name="heartRate_label" Text="0" Grid.Row="1" Grid.Column="1" Margin="0,0,0,5" TextColor="White"/>
+			<Label x:Name="calories_label" Text="0" Grid.Row="1" Grid.Column="2" Margin="0,0,0,5" TextColor="White"/>
+			</Grid>
 
-		<Label x:Name="heartRate_label"
-			   Text="test"
-			   Margin="60, 30, 0, 0"/>
-		
-		<Label x:Name="calories_label"
-			   Text="calories"
-			   Margin="60, 30, 0, 0"/>
-    </StackLayout>   
+			<ListView x:Name="RoutesView" ItemsSource="{Binding Routes}" BackgroundColor="#99ccff" Margin="5,10,0,20" RowHeight="60">
+	    		<ListView.ItemTemplate>
+	      			<DataTemplate>
+						 <ViewCell>
+							<StackLayout>
+	        					<Label Margin="0,5,5,0" HorizontalOptions="StartAndExpand" Text="{Binding startTime, StringFormat='{0:dd/MM/yyyy}'}" VerticalOptions="Center"/>
+	        					<StackLayout Orientation="Horizontal">
+									<Label FontSize="12" HorizontalOptions="StartAndExpand" Text="{Binding time, StringFormat='{0}'}" />
+									<Label HorizontalOptions="EndAndExpand" Text="{Binding distance, StringFormat='{0} km'}" />
+								</StackLayout>
+							</StackLayout>
+						</ViewCell>
+	      			</DataTemplate>
+	    		</ListView.ItemTemplate>
+	  		</ListView>
+	    </StackLayout>   
+	</ContentPage.Content>
 </ContentPage>

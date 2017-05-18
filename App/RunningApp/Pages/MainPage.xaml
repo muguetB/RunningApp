@@ -3,7 +3,8 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	xmlns:local="clr-namespace:RunningApp" 
 	x:Class="RunningApp.MainPage"
-	BackgroundColor="#99ccff">
+	BackgroundColor="#99ccff"
+	NavigationPage.HasNavigationBar="false">
 <StackLayout>   
 	<Label Text="Błędny login lub hasło!"
 		   FontSize="30"

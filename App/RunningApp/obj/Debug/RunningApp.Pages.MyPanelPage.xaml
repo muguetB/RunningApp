@@ -4,7 +4,9 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	x:Class="RunningApp.MyPanelPage"
 	x:Name="MyPanel"
-	BackgroundColor="#99ccff">
+	BackgroundColor="#99ccff"
+	NavigationPage.HasNavigationBar="false"
+	>
 	<StackLayout>   		
 		<Button 
 			Text="Moja ostatnia trasa"

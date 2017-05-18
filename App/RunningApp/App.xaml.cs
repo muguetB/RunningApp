@@ -12,7 +12,12 @@ namespace RunningApp
 		protected override void OnStart()
 		{
 			IoCContainter.Register();
-			MainPage = new MainPage();
+			MainPage = new NavigationPage(new MainPage())
+			{
+				BarBackgroundColor = Color.FromHex("e6f2ff"),
+				BarTextColor = Color.Navy
+			};
+
 		}
 
 		protected override void OnSleep()

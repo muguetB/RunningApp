@@ -7,6 +7,7 @@ namespace RunningApp
 {
 	public static class IoCContainter 	{ 		public static void Register() 		{ 			MvxSimpleIoCContainer.Initialize();
 			Mvx.ConstructAndRegisterSingleton<IRunnerStatistic, RunnerStatistic>(); 			Mvx.ConstructAndRegisterSingleton<IDBUser, DBUser>();
+			Mvx.ConstructAndRegisterSingleton<IDBRoutes, BDRoutes>();
 		}
 	}
 }

@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 
 namespace RunningApp
 {
@@ -43,6 +44,7 @@ namespace RunningApp
 			var response = await httpClient.PostAsync(requestUri, httpContent);
 
 			var result = await response.Content.ReadAsStringAsync();
+
 			if (response.IsSuccessStatusCode)
 			{
 				Debug.WriteLine("Udało się!");

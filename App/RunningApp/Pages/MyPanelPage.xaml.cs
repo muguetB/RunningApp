@@ -7,6 +7,7 @@ namespace RunningApp
 	{
 		public MyPanelPage()
 		{
+			Title = "Menu";
 			InitializeComponent();
 		}
 
@@ -16,9 +17,7 @@ namespace RunningApp
 
 		async void buttonClicked_history(object sender, EventArgs args)
 		{
-			await Navigation.PushModalAsync(new MyHistoryPage());
-
-
+			await Navigation.PushAsync(new MyHistoryPage());
 		}
 
 

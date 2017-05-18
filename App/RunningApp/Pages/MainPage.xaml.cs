@@ -18,23 +18,25 @@ namespace RunningApp
 
 		async void buttonClicked_login(object sender, EventArgs args)
 		{
-			var DBUser = Mvx.Resolve<IDBUser>();
+			await Navigation.PushAsync(new MyPanelPage());
+			/*var DBUser = Mvx.Resolve<IDBUser>();
 			var result = await DBUser.loginUser(login.Text, password.Text);
 			var status = JObject.Parse(result).ToObject<Status>();
 
 			if (status.status.ToString() == "1")
 			{
-				await Navigation.PushModalAsync(new MyPanelPage());
+				await Navigation.PushAsync(new MyPanelPage());
 			}
 			else
 			{
 				Blad.IsVisible = true;
 			}
+			*/
 		}
 
 		async void buttonClicked_register(object sender, EventArgs args)
 		{
-			await Navigation.PushModalAsync(new RegisterPage());
+			await Navigation.PushAsync(new RegisterPage());
 		}
 	}
 
